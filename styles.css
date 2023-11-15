@@ -1,0 +1,249 @@
+@import 'https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap';
+
+:root {
+    --cl-1: hsl(300, 43%, 22%);
+    --cl-2: hsl(333, 80%, 67%);
+    --cl-3: hsl(303, 10%, 53%); 
+    --cl-4: hsl(300, 24%, 96%);
+    --cl-5: hsl(0, 0%, 100%);   
+    
+    --fs-xl: 2.25rem;
+    --fs-lg: 1.25rem;
+    --fs-md: 0.9375rem;
+    --fs-sm: 0.8125rem;
+
+
+    --fw-400:400;
+    --fw-500:500;
+    --fw-700:700;
+
+
+    --mb-xl: 3em;
+    --mb-lg: 1.25em;
+    --mb-md: 1em;
+    --mb-sm: 0.5em;
+    --mb-xs: 0.25em;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: var(--fs-md);
+} 
+
+
+h1,
+h2 {
+    color: var(--cl-1);
+    line-height: 0.9;
+}
+
+p {
+    color: var(--cl-3);
+    line-height: 1.4;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* utilities */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    min-height: 100vh;
+    padding: 3em 0;
+}
+
+.social-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.social-row-1 {
+    margin-bottom: var(--mb-xl);
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.social-header {
+    margin-bottom: var(--fs-lg);
+}
+
+.social-header-lead,
+.social-header-text {
+    text-align: center;
+}
+
+.social-header-lead {
+    margin-bottom: var(--mb-md);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-700);
+}
+
+.social-header-text {
+    margin: 0 auto;
+    margin-bottom: var(--mb-xs);
+    max-width: 500px;  
+}
+.social-rate-info-1,
+.social-rate-info-2,
+.social-rate-info-3 {
+    background-color: var(--cl-4);
+    margin-bottom: var(--mb-md);
+    border-radius: 10px;
+    padding: 1em 0.5em;
+    flex-direction: column;
+}
+
+.social-rate-icon {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: var(--mb-md);
+
+}
+
+.social-rate-text {
+    text-align: center;
+    font-size: var(--fs-lg);
+
+}
+
+.social-rate-star {
+    margin: 0 var(--mb-xs);
+}
+
+.social-rate-star:first-child {
+    margin-left: 0;
+}
+
+.social-rate-star:last-child {
+    margin-right: 0;
+}
+
+.social-row-2 {
+    flex-direction: column;
+}
+.social-card {
+    background-color: var(--cl-1);
+    margin-bottom: var(--mb-lg);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.social-card-info {
+    margin-bottom: var(--mb-sm);
+
+}
+
+.social-card-picx {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.social-card-name {
+    color: var(--cl-5);
+    font-weight: var(--fw-500);
+    font-size: 1.125rem;
+}
+
+.social-card-tag {
+    display: block;
+    color: var(--cl-2);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-400);
+}
+
+.social-card-text {
+    color: var(--cl-4);
+}
+
+@media (min-width: 768px) {
+    .social-row-1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-header {
+        margin-bottom: 0;
+        margin-right: 2em;
+    }
+
+    .social-header-lead,
+    .social-header-text {
+        text-align: left;
+    }
+
+    .social-header-text {
+        max-width: 400px;
+    }
+
+    .social-rate-info-1,
+    .social-rate-info-2,
+    .social-rate-info-3 {
+        flex-direction: row;
+        padding: 1.25em 1em;
+    }
+
+    .social-rate-info-1 {
+        transform: translateX(-90px);
+    }
+    .social-rate-info-2 {
+        transform: translateX(-45px);
+    }
+    .social-rate-info-3 {
+        transform: translateX(0);
+    }
+
+    .social-rate-icon {
+        margin-bottom: 0;
+        margin-left: 1.5em;
+    }
+
+    .social-rate-text {
+        width: 90%;
+        text-align: left;
+        margin-left: 4em;
+        font-size: var(--fs-md);
+    }
+
+    .social-row-2 {
+        flex-direction: row;
+    }
+    .social-card {
+        margin-bottom: 0;
+        margin-left: 1.5em;
+        padding: 2.5em 1.5em;
+    }
+
+    .social-card:nth-child(1) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .social-card:nth-child(2) {
+        margin-top: 25px;
+    }
+    .social-card:nth-child(3) {
+        margin-top: 50px;
+    }
+
+    .social-card-info {
+        margin-bottom: var(--mb-lg);
+    }
+}   
